@@ -109,11 +109,11 @@ body {
     transform: translateX(-50%);
     border-radius: 50%;
     font-size: 20px;
-    background-color: #ffffff80;
+    background-color: var(--opacitySecondBgc);
     text-align: center;
     cursor: pointer;
     z-index: 3;
-    display: none;
+    /* display: none; */
 }
 
 .to-top:hover .to-top__icon {
@@ -138,7 +138,7 @@ body {
     cursor: pointer;
     overflow: hidden;
     z-index: 3;
-    /* display: none; */
+    display: none;
 }
 
 .to-bottom__icon {
@@ -246,7 +246,7 @@ body {
 }
 
 .section__wrap {
-    padding: 20px 20px 80px 20px;
+    padding: 40px 20px 80px 20px;
 }
 
 .section--about {
@@ -259,6 +259,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto 220px;
     grid-template-areas: "about__description""about__image";
+    padding: 20px 20px 80px 20px;
 }
 
 .about__description {
@@ -374,32 +375,37 @@ body {
 .section__wrap--skills {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    height: 100%;
-    background-color: #fff;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.skills__item {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
 }
 
 .skill {
-    display: grid;
-    grid-template-columns: 20% auto;
-    grid-template-rows: 50px;
-    grid-template-areas: "skill__icon skill__description";
-    margin-bottom: 40px;
-    border-radius: 5px;
-    padding: 20px;
-    background-color: #e2dfdb80;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 0 20px;
+    background-color: var(--opacitySecondBgc);
+    /* display: none; */
 }
 
 .skill__icon {
-    grid-area: skill__icon;
     font-size: 24px;
-    line-height: 50px;
+    line-height: 70px;
+    /* background-color: red; */
+    /* display: none; */
 }
 
 .skill__description {
-    grid-area: skill__description;
     font-size: 18px;
-    line-height: 50px;
+    line-height: 70px;
+    /* display: none; */
 }
 
 
@@ -614,5 +620,25 @@ body {
         bottom: 10px;
         right: 20px;
     }
+
+
+    .section__wrap--skills {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .skills__item {
+        /* border: 2px solid red; */
+        padding: 20px 20px;
+    }
+
+    .skill__icon {
+        font-size: 22px;
+    }
+
+    .skill__description {
+        font-size: 16px;
+    }
+
 
 }
