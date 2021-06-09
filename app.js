@@ -24,6 +24,19 @@ const scrollToTop = () => {
     });
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 const scrollPage = () => {
     $(window).on('scroll', function () {
         const scrollValue = $(window).scrollTop();

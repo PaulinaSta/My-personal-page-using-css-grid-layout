@@ -5,10 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- SEO -->
+    <title>Paulina Staszyńska</title>
+    <meta name="description" content="Paulina Staszyńska - Front-end Developer | Responsywne strony internetowe">
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.png" />
+    <!-- font awesome, google fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- style CSS -->
     <link rel="stylesheet" href="/style.css">
 </head>
 
@@ -28,44 +35,60 @@
     </nav>
 
     <div class="to-top">
-        <i class="fas fa-chevron-up to-top__item"></i>
+        <i class="fas fa-chevron-up to-top__icon"></i>
     </div>
 
     <div class="to-bottom">
         <i class="fas fa-chevron-down to-bottom__icon"></i>
-        <i class="fas fa-chevron-down to-bottom__icon to-bottom__icon--2"></i>
-        <i class="fas fa-chevron-down to-bottom__icon to-bottom__icon--3"></i>
     </div>
 
+
+    <!-- header -->
     <header class=" header">
         <div class="benefit benefit--1">
             <p class="benefit__text">Zaangażowanie</p>
         </div>
         <div class="benefit benefit--2">
-            <p class="benefit__text">Dokładność</p>
+            <p class="benefit__text">Cierpliwość</p>
         </div>
         <div class="benefit benefit--3">
-            <p class="benefit__text">Cierpliwość</p>
+            <p class="benefit__text">Otwartość</p>
+        </div>
+        <div class="benefit benefit--4">
+            <p class="benefit__text">Komunikatywność</p>
+        </div>
+        <div class="benefit benefit--5">
+            <p class="benefit__text">Sumienność</p>
+        </div>
+        <div class="benefit benefit--6">
+            <p class="benefit__text">Dokładność</p>
+        </div>
+        <div class="benefit benefit--7">
+            <p class="benefit__text">Chęć rozwoju</p>
         </div>
         <div class="cta">
             <a href="https://github.com/PaulinaSta" class="cta__link">GitHub<i class="fab fa-github cta__icon"></i></a>
         </div>
     </header>
 
+    <!-- main -->
     <main class="main">
 
-        <section class="about">
-            <h1 class="about__heading">Witaj!</h1>
-            <div class="about__description">
-                <p class="about__text">
-                    Nazywam się Paulina Staszyńska i zapraszam do obejrzenia mojej strony internetowej.
-                </p>
-            </div>
-            <div class="about__image">
-                <div class="about__img-wrap">
+        <section class="section section--about">
+
+            <h1 class="section__heading">Witaj!</h1>
+
+            <div class="section__wrap section__wrap--about">
+                <div class="about__description">
+                    <p class="about__text">
+                        Nazywam się Paulina Staszyńska i zapraszam do obejrzenia mojej strony internetowej.
+                    </p>
+                </div>
+                <div class="about__image">
                     <img src="/img/photo.jpg" alt="Paulina Staszyńska" class="about__img">
                 </div>
             </div>
+
             <div class="about__bubble about__bubble--1"></div>
             <div class="about__bubble about__bubble--2"></div>
             <div class="about__bubble about__bubble--3"></div>
@@ -77,10 +100,11 @@
             <div class="about__bubble about__bubble--9"></div>
             <div class="about__bubble about__bubble--10"></div>
         </section>
-        <section class="skills">
-            <h1 class="skills__heading">Moje umiejętności</h1>
 
-            <div class="skills__content">
+        <section class="section section--skills">
+            <h1 class="section__heading">Moje umiejętności</h1>
+            <div class="section__wrap section__wrap--skills">
+
                 <div class="skill">
                     <div class="skill__icon"><i class="fab fa-html5"></i></div>
                     <div class="skill__description">HTML5</div>
@@ -113,9 +137,12 @@
                     <div class="skill__icon"><i class="fas fa-tablet-alt"></i></div>
                     <div class="skill__description">RWD | BEM</div>
                 </div>
+
             </div>
 
+
         </section>
+
         <section class="contact">
             <h1 class="contact__heading">Skontaktuj się ze mną!</h1>
             <ul class="contact__details">
@@ -133,13 +160,14 @@
         </section>
     </main>
 
+    <!-- footer -->
     <footer class="footer">
         <div class="copy">
             <p class="copy__text">Paulina Staszyńska 2021 &copy;</p>
         </div>
     </footer>
 
-
+    <!-- JavaScript, jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/app.js"></script>
 
