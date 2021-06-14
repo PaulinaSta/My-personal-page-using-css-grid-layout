@@ -16,7 +16,7 @@ html {
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh auto auto;
+    grid-template-rows: 100vh auto 50px;
     grid-template-areas: "header""main""footer";
     min-height: 150vh;
     max-width: 1366px;
@@ -416,19 +416,23 @@ body {
 
 
 
-.contact {
+.section--contact {
     grid-area: contact;
+}
+
+.section__wrap--contact {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas: "contact__heading""contact__details";
-    padding: 80px 20px;
+    grid-template-areas: "contact__description""contact__details";
+    padding: 20px 20px 80px 20px;
+    /* background-color: green; */
 }
 
-.contact__heading {
-    grid-area: contact__heading;
-    text-align: center;
-    margin-bottom: 20px;
+.contact__description {
+    grid-area: contact__description;
+    text-align: justify;
+    margin-bottom: 40px;
 }
 
 .contact__details {
@@ -448,6 +452,10 @@ body {
     text-decoration: none;
     color: #333;
 }
+
+
+
+
 
 .footer {
     grid-area: footer;
@@ -621,7 +629,6 @@ body {
         right: 20px;
     }
 
-
     .section__wrap--skills {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -640,5 +647,27 @@ body {
         font-size: 16px;
     }
 
+    .section__wrap--contact {
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr;
+        grid-template-areas: "contact__description contact__details";
+        padding: 20px 20px 40px 20px;
+        /* background-color: green; */
+    }
+
+    .contact__description {
+        margin-bottom: 0px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    .contact__details {
+        padding: 10px 20px;
+    }
+
+    .contact__detail {
+        line-height: 25px;
+        text-align: right;
+    }
 
 }
