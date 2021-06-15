@@ -9,8 +9,6 @@ html {
     --secondBgc: #e2dfdb;
     --opacitySecondBgc: #e2dfdb80;
     --fc: #333;
-    font-family: 'Quicksand', sans-serif;
-    color: var(--fc);
 }
 
 body {
@@ -23,6 +21,12 @@ body {
     margin: 0 auto;
     overflow-x: hidden;
     background-color: var(--bgc);
+}
+
+body,
+button {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--fc);
 }
 
 .burger {
@@ -152,9 +156,10 @@ body {
 /* header */
 .header {
     grid-area: header;
-    background-image: url(/img/header.jpg);
+    background-image: url(img/header.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     position: relative;
     overflow-x: hidden;
 }
@@ -165,7 +170,7 @@ body {
     top: 50%;
     transform: translate(100%, -50%);
     text-align: center;
-    animation: benefit 28s infinite;
+    animation: benefit 21s infinite;
 }
 
 .benefit--1 {
@@ -173,27 +178,27 @@ body {
 }
 
 .benefit--2 {
-    animation-delay: 4s;
+    animation-delay: 3s;
 }
 
 .benefit--3 {
-    animation-delay: 8s;
+    animation-delay: 6s;
 }
 
 .benefit--4 {
-    animation-delay: 12s;
+    animation-delay: 9s;
 }
 
 .benefit--5 {
-    animation-delay: 16s;
+    animation-delay: 12s;
 }
 
 .benefit--6 {
-    animation-delay: 20s;
+    animation-delay: 15s;
 }
 
 .benefit--7 {
-    animation-delay: 24s;
+    animation-delay: 18s;
 }
 
 .benefit__text {
@@ -236,8 +241,8 @@ body {
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh 200vh calc(100vh - 50px);
-    grid-template-areas: "about""skills""contact";
+    grid-template-rows: 100vh auto auto calc(100vh - 50px);
+    grid-template-areas: "about""skills""projects""contact";
 }
 
 .section__heading {
@@ -248,6 +253,11 @@ body {
 .section__wrap {
     padding: 40px 20px 80px 20px;
 }
+
+
+
+
+
 
 .section--about {
     grid-area: about;
@@ -360,16 +370,10 @@ body {
     animation-delay: 1s;
 }
 
-
-
-
-
-
-
-
 .section--skills {
     grid-area: skills;
     background-color: #fff;
+    background-color: var(--bgc);
 }
 
 .section__wrap--skills {
@@ -408,14 +412,6 @@ body {
     /* display: none; */
 }
 
-
-
-
-
-
-
-
-
 .section--contact {
     grid-area: contact;
 }
@@ -452,6 +448,118 @@ body {
     text-decoration: none;
     color: #333;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section--projects {
+    grid-area: projects;
+}
+
+.section__wrap--projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.projects__item {
+    /* border: 2px solid #fff; */
+    padding: 20px 0;
+}
+
+.project {
+    position: relative;
+    height: 220px;
+    background-position: top;
+    background-size: cover;
+    overflow: hidden;
+    /* box-shadow: 0 0 10px black; */
+    border-radius: 10px;
+}
+
+.project--1 {
+    background-image: url(img/Personal.png);
+}
+
+.project--2 {
+    background-image: url(img/Kasia.png);
+}
+
+.project--3 {
+    background-image: url(img/ToDo.png);
+}
+
+.project--4 {
+    background-image: url(img/Web.png);
+}
+
+.project--5 {
+    background-image: url(img/Landing.png);
+}
+
+.project--6 {
+    background-image: url(img/KOIA.png);
+}
+
+.project__description {
+    height: 100%;
+    padding: 10px;
+    background-color: var(--secondBgc);
+    transform: translateY(100%);
+    transition: .3s;
+}
+
+.project__description--active {
+    transform: translateY(0%);
+}
+
+.project__buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.project__button {
+    border: none;
+    padding: 5px 10px;
+    background-color: var(--bgc);
+    border-radius: 45px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+}
+
+.project__button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.project__button--active {
+    display: inline-block;
+}
+
+.project__icon {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+
+
+
 
 
 
@@ -636,7 +744,7 @@ body {
 
     .skills__item {
         /* border: 2px solid red; */
-        padding: 20px 20px;
+        padding: 20px;
     }
 
     .skill__icon {
@@ -668,6 +776,26 @@ body {
     .contact__detail {
         line-height: 25px;
         text-align: right;
+    }
+
+
+
+
+
+
+
+    .section__wrap--projects {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .projects__item {
+        /* border: 2px solid #fff; */
+        padding: 20px;
+    }
+
+    .project {
+        height: 165px;
     }
 
 }
