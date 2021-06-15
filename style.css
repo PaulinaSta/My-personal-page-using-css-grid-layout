@@ -51,6 +51,14 @@ button {
     left: 35px;
 }
 
+
+
+
+
+
+
+
+
 .burger__line {
     position: absolute;
     height: 3px;
@@ -73,6 +81,25 @@ button {
     left: 55px;
     transform: translateY(300%);
 }
+
+
+
+
+.burger__line--active {
+    width: 25px;
+    left: 35px;
+    transform: rotate(-45deg);
+}
+
+.burger__line--line1--active {
+    transform: rotate(45deg);
+}
+
+.burger__line--line3--active {
+    display: none;
+}
+
+
 
 .menu-container {
     position: fixed;
@@ -248,6 +275,8 @@ button {
 .section__heading {
     text-align: center;
     margin-top: 80px;
+    font-weight: 400;
+    /* background-color: #ffffff80; */
 }
 
 .section__wrap {
@@ -373,7 +402,6 @@ button {
 .section--skills {
     grid-area: skills;
     background-color: #fff;
-    background-color: var(--bgc);
 }
 
 .section__wrap--skills {
