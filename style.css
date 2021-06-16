@@ -42,10 +42,6 @@ button {
     z-index: 3;
 }
 
-.burger--active {
-    background-color: transparent;
-}
-
 .burger:hover .burger__line {
     width: 25px;
     left: 35px;
@@ -56,17 +52,11 @@ button {
 
 
 
-
-
-
 .burger__line {
     position: absolute;
     height: 3px;
-    width: 15px;
     bottom: 50px;
-    left: 45px;
     background-color: var(--fc);
-    transform: translateY(50%);
     transition: .3s;
 }
 
@@ -76,28 +66,37 @@ button {
     transform: translateY(-200%);
 }
 
+.burger__line--line2 {
+    left: 45px;
+    width: 15px;
+    transform: translateY(50%);
+}
+
 .burger__line--line3 {
-    width: 5px;
     left: 55px;
+    width: 5px;
     transform: translateY(300%);
 }
 
 
 
 
-.burger__line--active {
-    width: 25px;
-    left: 35px;
-    transform: rotate(-45deg);
-}
-
-.burger__line--line1--active {
+.js-burger__line1--active {
+    left: 40px;
+    width: 15px;
     transform: rotate(45deg);
 }
 
-.burger__line--line3--active {
+.js-burger__line2--active {
+    left: 40px;
+    width: 15px;
+    transform: rotate(-45deg);
+}
+
+.js-burger__line3--active {
     display: none;
 }
+
 
 
 
@@ -110,12 +109,12 @@ button {
     background-color: var(--opacitySecondBgc);
     border-radius: 50%;
     transform: translate(100%, -100%);
+    transition: 1s ease-out;
 }
 
-.menu-container--show {
+.js-menu-container--show {
     background-color: var(--secondBgc);
     transform: translate(50%, -50%);
-    transition: 1s ease-out;
     z-index: 2;
 }
 
@@ -131,20 +130,53 @@ button {
     text-align: right;
 }
 
+.to-bottom {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: var(--secondBgc);
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .3s;
+    z-index: 3;
+    /* display: none; */
+}
+
+.js-to-bottom--active {
+    transform: translate(-50%, 70px);
+}
+
+.to-bottom__icon {
+    font-size: 30px;
+    line-height: 50px;
+    transform: rotateX(50deg);
+    transition: .3s;
+    animation: toBottom 2.5s infinite linear;
+}
+
 .to-top {
     position: fixed;
     height: 50px;
     width: 50px;
     bottom: 20px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 70px);
     border-radius: 50%;
     font-size: 20px;
     background-color: var(--opacitySecondBgc);
     text-align: center;
     cursor: pointer;
+    transition: .3s;
     z-index: 3;
     /* display: none; */
+}
+
+.js-to-top--active {
+    transform: translate(-50%, 0);
 }
 
 .to-top:hover .to-top__icon {
@@ -157,28 +189,7 @@ button {
     transition: .3s;
 }
 
-.to-bottom {
-    position: fixed;
-    height: 50px;
-    width: 50px;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--secondBgc);
-    text-align: center;
-    cursor: pointer;
-    overflow: hidden;
-    z-index: 3;
-    display: none;
-}
 
-.to-bottom__icon {
-    font-size: 30px;
-    line-height: 50px;
-    transform: rotateX(50deg);
-    transition: .3s;
-    animation: toBottom 2.5s infinite linear;
-}
 
 /* header */
 .header {
@@ -256,7 +267,7 @@ button {
 
 .cta__link:hover {
     color: var(--fc);
-    background-color: var(--secondBgc);
+    background-color: #fff;
 }
 
 .cta__icon {

@@ -1,10 +1,15 @@
 const menuShow = () => {
     const burger = document.querySelector('.burger');
     const menuContainer = document.querySelector('.menu-container');
+    const burgerLine1 = document.querySelector('.burger__line--line1');
+    const burgerLine2 = document.querySelector('.burger__line--line2');
+    const burgerLine3 = document.querySelector('.burger__line--line3');
 
     burger.addEventListener('click', () => {
-        menuContainer.classList.toggle('menu-container--show');
-        burger.classList.toggle('burger--active');
+        menuContainer.classList.toggle('js-menu-container--show');
+        burgerLine1.classList.toggle('js-burger__line1--active');
+        burgerLine2.classList.toggle('js-burger__line2--active');
+        burgerLine3.classList.toggle('js-burger__line3--active');
     });
 }
 
