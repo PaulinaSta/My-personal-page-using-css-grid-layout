@@ -28,19 +28,20 @@
     
     <nav class="menu-container">
         <ul class="menu">
-            <li class="menu__item">O mnie</li>
-            <li class="menu__item">Umiejętności</li>
-            <li class="menu__item">Kontakt</li>
+            <li class="menu__item"><a href="#about" id="about-section" class="menu__link">O mnie</a></li>
+            <li class="menu__item"><a href="#skills" id="skills-section" class="menu__link">Umiejętności</a></li>
+            <li class="menu__item"><a href="#projects" id="projects-section" class="menu__link">Projekty</a></li>
+            <li class="menu__item"><a href="#contact" id="contact-section" class="menu__link">Kontakt</a></li>
         </ul>
     </nav>
-
-    <div class="to-top">
-        <i class="fas fa-chevron-up to-top__icon"></i>
-    </div>
 
     <div class="to-bottom">
         <i class="fas fa-chevron-down to-bottom__icon"></i>
     </div>
+    <div class="to-top">
+        <i class="fas fa-chevron-up to-top__icon"></i>
+    </div>
+
 
 
     <!-- header -->
@@ -74,7 +75,7 @@
     <!-- main -->
     <main class="main">
 
-        <section class="section section--about">
+        <section data-section="about-section" class="section section--about">
 
             <h1 class="section__heading">Witaj!</h1>
 
@@ -101,7 +102,7 @@
             <div class="about__bubble about__bubble--10"></div>
         </section>
 
-        <section class="section section--skills">
+        <section data-section="skills-section" class="section section--skills">
             <h1 class="section__heading">Moje umiejętności</h1>
             <div class="section__wrap section__wrap--skills">
 
@@ -166,7 +167,7 @@
 
         </section>
 
-        <section class="section section--projects">
+        <section data-section="projects-section" class="section section--projects">
             <h1 class="section__heading">Moje projekty</h1>
             <div class="section__wrap section__wrap--projects">
 
@@ -240,7 +241,7 @@
         </section>
 
 
-        <section class="section section--contact">
+        <section data-section="contact-section" class="section section--contact">
             <h1 class="section__heading">Skontaktuj się ze mną!</h1>
             <div class="section__wrap section__wrap--contact">
                 <div class="contact__description">
