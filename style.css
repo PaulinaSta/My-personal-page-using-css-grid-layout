@@ -531,88 +531,51 @@ button {
 }
 
 .projects__item {
-    /* border: 2px solid #fff; */
+    border: 2px solid #fff;
     padding: 20px 0;
 }
 
-.project {
-    position: relative;
+.project-img {
     height: 220px;
     background-position: top;
     background-size: cover;
-    overflow: hidden;
-    /* box-shadow: 0 0 10px black; */
     border-radius: 10px;
+    transition: .3s;
 }
 
-.project--1 {
+.project-img:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.project-img__link {
+    height: 100%;
+    display: block;
+}
+
+.project-img--1 {
     background-image: url(img/Personal.png);
 }
 
-.project--2 {
+.project-img--2 {
     background-image: url(img/Kasia.png);
 }
 
-.project--3 {
+.project-img--3 {
     background-image: url(img/ToDo.png);
 }
 
-.project--4 {
+.project-img--4 {
     background-image: url(img/Web.png);
 }
 
-.project--5 {
+.project-img--5 {
     background-image: url(img/Landing.png);
 }
 
-.project--6 {
+.project-img--6 {
     background-image: url(img/KOIA.png);
 }
 
-.project__description {
-    height: 100%;
-    padding: 10px;
-    background-color: var(--secondBgc);
-    transform: translateY(100%);
-    transition: .3s;
-}
-
-.project__description--active {
-    transform: translateY(0%);
-}
-
-.project__buttons {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
-
-.project__button {
-    border: none;
-    padding: 5px 10px;
-    background-color: var(--bgc);
-    border-radius: 45px;
-    color: #fff;
-    cursor: pointer;
-    transition: .3s;
-    display: none;
-}
-
-.project__button:hover {
-    background-color: #fff;
-    color: #333;
-}
-
-.project__button--active {
-    display: inline-block;
-}
-
-.project__icon {
-    font-size: 10px;
-    margin-left: 5px;
-}
 
 
 
