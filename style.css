@@ -469,42 +469,7 @@ button {
     /* display: none; */
 }
 
-.section--contact {
-    grid-area: contact;
-}
 
-.section__wrap--contact {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "contact__description""contact__details";
-    padding: 20px 20px 80px 20px;
-    /* background-color: green; */
-}
-
-.contact__description {
-    grid-area: contact__description;
-    text-align: justify;
-    margin-bottom: 40px;
-}
-
-.contact__details {
-    grid-area: contact__details;
-    background-color: #ffffff80;
-    border-radius: 10px;
-    list-style: none;
-    padding: 20px;
-}
-
-.contact__detail {
-    line-height: 30px;
-    text-align: center;
-}
-
-.contact__link {
-    text-decoration: none;
-    color: #333;
-}
 
 
 
@@ -531,7 +496,7 @@ button {
 }
 
 .projects__item {
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
     padding: 20px 0;
 }
 
@@ -539,17 +504,12 @@ button {
     height: 220px;
     background-position: top;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     transition: .3s;
 }
 
 .project-img:hover {
     box-shadow: 0 0 10px black;
-}
-
-.project-img__link {
-    height: 100%;
-    display: block;
 }
 
 .project-img--1 {
@@ -576,11 +536,59 @@ button {
     background-image: url(img/KOIA.png);
 }
 
+.project-img__link:nth-of-type(1) {
+    height: 100%;
+    display: block;
+}
+
+.project-description {
+    margin-top: 10px;
+    text-align: justify;
+    padding: 20px 10px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff80;
+}
 
 
 
 
 
+
+
+
+.section--contact {
+    grid-area: contact;
+}
+
+.section__wrap--contact {
+    padding: 20px 20px 80px 20px;
+    /* background-color: green; */
+}
+
+.contact__description {
+    text-align: justify;
+    margin-bottom: 10px;
+    background-color: #dddddd80;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.contact__details {
+    background-color: #ffffff80;
+    border-radius: 0 0 10px 10px;
+    list-style: none;
+    padding: 20px;
+}
+
+.contact__detail {
+    line-height: 30px;
+    text-align: center;
+}
+
+.contact__link {
+    text-decoration: none;
+    color: #333;
+}
 
 
 
@@ -775,47 +783,73 @@ button {
         font-size: 16px;
     }
 
+    .projects__item {
+        display: grid;
+        grid-template-columns: 31% 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "project-img project-description";
+    }
+
+    .project-img {
+        grid-area: project-img;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .project-img--1 {
+        background-image: url(img/Personal_portrait.png);
+    }
+
+    .project-img--2 {
+        background-image: url(img/Kasia_portrait.png);
+    }
+
+    .project-img--3 {
+        background-image: url(img/ToDo_portrait.png);
+    }
+
+    .project-img--4 {
+        background-image: url(img/Web_portrait.png);
+    }
+
+    .project-img--5 {
+        background-image: url(img/Landing_portrait.png);
+    }
+
+    .project-img--6 {
+        background-image: url(img/KOIA_portrait.png);
+    }
+
+    .project-description {
+        grid-area: project-description;
+        margin-top: 0px;
+        margin-left: 10px;
+        padding: 10px 20px;
+        border-radius: 0 10px 10px 0;
+    }
+
     .section__wrap--contact {
-        grid-template-columns: auto auto;
+        display: grid;
+        grid-template-columns: auto 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: "contact__description contact__details";
-        padding: 20px 20px 40px 20px;
-        /* background-color: green; */
+        padding: 20px 20px 20px 20px;
+        background-color: green;
     }
 
     .contact__description {
+        grid-area: contact__description;
         margin-bottom: 0px;
-        margin-right: 20px;
-        margin-top: 10px;
+        border-radius: 10px 0 0 10px;
     }
 
     .contact__details {
-        padding: 10px 20px;
+        grid-area: contact__details;
+        margin-left: 10px;
+        border-radius: 0 10px 10px 0;
     }
 
     .contact__detail {
         line-height: 25px;
         text-align: right;
     }
-
-
-
-
-
-
-
-    .section__wrap--projects {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-
-    .projects__item {
-        /* border: 2px solid #fff; */
-        padding: 20px;
-    }
-
-    .project {
-        height: 165px;
-    }
-
 }
