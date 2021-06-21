@@ -47,11 +47,6 @@ button {
     left: 35px;
 }
 
-
-
-
-
-
 .burger__line {
     position: absolute;
     height: 3px;
@@ -138,6 +133,7 @@ button {
     text-decoration: none;
     padding: 5px 10px;
     transition: .3s;
+    z-index: 4;
 }
 
 .menu__link:hover {
@@ -312,11 +308,6 @@ button {
     padding: 40px 20px 80px 20px;
 }
 
-
-
-
-
-
 .section--about {
     grid-area: about;
     position: relative;
@@ -327,7 +318,6 @@ button {
     grid-template-columns: 1fr;
     grid-template-rows: auto 220px;
     grid-template-areas: "about__description""about__image";
-    padding: 20px 20px 80px 20px;
 }
 
 .about__description {
@@ -549,6 +539,14 @@ button {
     background-color: #ffffff80;
 }
 
+.project-description__heading {
+    font-size: 16px;
+}
+
+.highlight {
+    letter-spacing: 2px;
+}
+
 
 
 
@@ -560,13 +558,8 @@ button {
     grid-area: contact;
 }
 
-.section__wrap--contact {
-    padding: 20px 20px 80px 20px;
-    /* background-color: green; */
-}
-
 .contact__description {
-    text-align: justify;
+    text-align: center;
     margin-bottom: 10px;
     background-color: #dddddd80;
     padding: 20px;
@@ -833,11 +826,11 @@ button {
         grid-template-rows: 1fr;
         grid-template-areas: "contact__description contact__details";
         padding: 20px 20px 20px 20px;
-        background-color: green;
     }
 
     .contact__description {
         grid-area: contact__description;
+        text-align: left;
         margin-bottom: 0px;
         border-radius: 10px 0 0 10px;
     }
