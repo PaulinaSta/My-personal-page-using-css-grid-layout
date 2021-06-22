@@ -43,8 +43,8 @@ button {
 }
 
 .burger:hover .burger__line {
-    width: 25px;
     left: 35px;
+    width: 25px;
 }
 
 .burger__line {
@@ -145,8 +145,8 @@ button {
 
 .to-bottom {
     position: fixed;
-    height: 50px;
-    width: 50px;
+    /* height: 50px; */
+    /* width: 50px; */
     bottom: 20px;
     left: 50%;
     transform: translate(-50%, 0);
@@ -269,7 +269,7 @@ button {
 
 .cta__link {
     font-size: 20px;
-    line-height: 50px;
+    /* line-height: 50px; */
     color: #ffffff;
     text-decoration: none;
     background-color: var(--fc);
@@ -491,7 +491,7 @@ button {
 }
 
 .project-img {
-    height: 220px;
+    height: 210px;
     background-position: top;
     background-size: cover;
     border-radius: 10px 10px 0 0;
@@ -546,13 +546,6 @@ button {
 .highlight {
     letter-spacing: 2px;
 }
-
-
-
-
-
-
-
 
 .section--contact {
     grid-area: contact;
@@ -676,173 +669,3 @@ button {
 
 
 /* MEDIA QUERIES */
-
-@media screen and (min-width: 568px) and (orientation: landscape) {
-
-    .benefit {
-        top: 40%;
-    }
-
-    .benefit__text {
-        font-size: 22px;
-        line-height: 60px;
-    }
-
-    .cta {
-        bottom: 30%;
-    }
-
-    .cta__link {
-        font-size: 18px;
-        line-height: 40px;
-    }
-
-    .section__heading {
-        text-align: center;
-        margin: 40px 0 0 0;
-    }
-
-    .section__wrap--about {
-        grid-template-columns: auto 200px;
-        grid-template-rows: 200px;
-        grid-template-areas: "about__description about__image";
-    }
-
-    .about__description {
-        margin-bottom: 0px;
-        margin-right: 40px;
-        margin-top: 50px;
-    }
-
-    .about__image {
-        width: 200px;
-    }
-
-    .about__bubble--1 {
-        top: 50px;
-        left: 150px;
-    }
-
-    .about__bubble--3 {
-        top: 120px;
-        right: 250px;
-    }
-
-    .about__bubble--4 {
-        top: 150px;
-        left: 200px;
-    }
-
-    .about__bubble--5 {
-        top: 220px;
-        right: 300px;
-    }
-
-    .about__bubble--6 {
-        top: 260px;
-        left: 100px;
-    }
-
-    .about__bubble--7 {
-        bottom: 200px;
-        left: 50px;
-    }
-
-    .about__bubble--8 {
-        bottom: 30px;
-        right: 5px;
-    }
-
-    .about__bubble--9 {
-        bottom: 10px;
-        right: 20px;
-    }
-
-    .section__wrap--skills {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-
-    .skills__item {
-        /* border: 2px solid red; */
-        padding: 20px;
-    }
-
-    .skill__icon {
-        font-size: 22px;
-    }
-
-    .skill__description {
-        font-size: 16px;
-    }
-
-    .projects__item {
-        display: grid;
-        grid-template-columns: 31% 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "project-img project-description";
-    }
-
-    .project-img {
-        grid-area: project-img;
-        border-radius: 10px 0 0 10px;
-    }
-
-    .project-img--1 {
-        background-image: url(img/Personal_portrait.png);
-    }
-
-    .project-img--2 {
-        background-image: url(img/Kasia_portrait.png);
-    }
-
-    .project-img--3 {
-        background-image: url(img/ToDo_portrait.png);
-    }
-
-    .project-img--4 {
-        background-image: url(img/Web_portrait.png);
-    }
-
-    .project-img--5 {
-        background-image: url(img/Landing_portrait.png);
-    }
-
-    .project-img--6 {
-        background-image: url(img/KOIA_portrait.png);
-    }
-
-    .project-description {
-        grid-area: project-description;
-        margin-top: 0px;
-        margin-left: 10px;
-        padding: 10px 20px;
-        border-radius: 0 10px 10px 0;
-    }
-
-    .section__wrap--contact {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "contact__description contact__details";
-        padding: 20px 20px 20px 20px;
-    }
-
-    .contact__description {
-        grid-area: contact__description;
-        text-align: left;
-        margin-bottom: 0px;
-        border-radius: 10px 0 0 10px;
-    }
-
-    .contact__details {
-        grid-area: contact__details;
-        margin-left: 10px;
-        border-radius: 0 10px 10px 0;
-    }
-
-    .contact__detail {
-        line-height: 25px;
-        text-align: right;
-    }
-}
