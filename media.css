@@ -380,7 +380,6 @@
     .contact__description {
         font-size: 28px;
         line-height: 50px;
-        margin-bottom: 50px;
         border-radius: 15px 15px 0 0;
     }
 
@@ -564,6 +563,7 @@
         margin-bottom: 0px;
         margin-right: 40px;
         margin-top: 50px;
+        text-align: left;
     }
 
     .about__image {
@@ -667,10 +667,15 @@
 
     .project-description {
         grid-area: project-description;
+        font-size: 14px;
         margin-top: 0px;
         margin-left: 10px;
         padding: 10px 20px;
         border-radius: 0 10px 10px 0;
+    }
+
+    .project-description__heading {
+        font-size: 14px;
     }
 
     .section__wrap--contact {

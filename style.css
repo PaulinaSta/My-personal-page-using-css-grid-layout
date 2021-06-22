@@ -322,7 +322,7 @@ button {
 
 .about__description {
     grid-area: about__description;
-    text-align: justify;
+    text-align: center;
     margin-bottom: 40px;
     z-index: 1;
 }
@@ -549,6 +549,7 @@ button {
 
 .section--contact {
     grid-area: contact;
+    background-color: #fff;
 }
 
 .contact__description {
@@ -560,7 +561,7 @@ button {
 }
 
 .contact__details {
-    background-color: #ffffff80;
+    background-color: #c6bfb780;
     border-radius: 0 0 10px 10px;
     list-style: none;
     padding: 20px;
@@ -576,15 +577,11 @@ button {
     color: #333;
 }
 
-
-
-
 .footer {
     grid-area: footer;
 }
 
 .copy__text {
-    background-color: #ffffff80;
     text-align: center;
     line-height: 50px;
 }
