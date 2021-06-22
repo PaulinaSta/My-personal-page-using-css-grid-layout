@@ -17,7 +17,7 @@ body {
     grid-template-rows: 100vh auto 50px;
     grid-template-areas: "header""main""footer";
     min-height: 150vh;
-    max-width: 1366px;
+    max-width: 1680px;
     margin: 0 auto;
     overflow-x: hidden;
     background-color: var(--bgc);
